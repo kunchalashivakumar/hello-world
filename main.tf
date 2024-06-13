@@ -40,7 +40,8 @@ resource "aws_ecs_task_definition" "my_task_definition" {
   execution_role_arn       = "arn:aws:iam::851725329984:role/ecsTaskExecutionRole"  # Use the provided ARN
 }
 
-resource "aws_ecs_service" "my_service" {  name            = "my-service"
+resource "aws_ecs_service" "my_service" {
+  name            = "my-service"
   cluster         = aws_ecs_cluster.my_cluster.id
   task_definition = aws_ecs_task_definition.my_task_definition.arn
   desired_count   = 1
