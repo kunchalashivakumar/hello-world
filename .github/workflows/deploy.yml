@@ -1,4 +1,4 @@
-#DEPLOY.YML
+
 name: Terraform CD
 
 on:
