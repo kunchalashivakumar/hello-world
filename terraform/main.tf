@@ -22,7 +22,7 @@ resource "aws_ecs_task_definition" "my_task_definition" {
   family                   = "my-task-definition"
   container_definitions    = jsonencode([{
     name      = "my-container",
-    image     = "ravinder143/helloworldnodeapp:1",  # Replace with your Docker image URI
+    image     = "shiva8639/helloapp:1",  # Replace with your Docker image URI
     cpu       = 256,
     memory    = 512,
     essential = true,
